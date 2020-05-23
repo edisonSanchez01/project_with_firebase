@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Base de datos firebase</string>
+    <string name="ident">Identificacion</string>
+    <string name="name">Nombre</string>
+    <string name="calle">Direccion</string>
+    <string name="phone">Celular</string>
+    <string name="consult">Consultar</string>
+    <string name="delete">Eliminar</string>
+    <string name="add">Registrar</string>
+    <string name="update">Actualizar</string>
+    <string name="title">Consultar Base de Datos</string>
+    <string name="msg_registrar">Ha registrado este usuario en la base de datos</string>
+    <string name="msg_consultar">Este usuario existe en la base de datos</string>
+    <string name="msg_actualizar">Ha actualizado la informacion de este usuario en la base de datos</string>
+    <string name="msg_eliminar">Ha eliminado este usuario en la base de datos</string>
+    <string name="msg_error">El usuario digitado no existe en la base de datos</string>
+    <string name="msg_error_id">La identificacion digitada no es valida</string>
+    <string name="msg_error_name">El nombre digitado no es valido, puede ser demasiado corto</string>
+    <string name="msg_error_direccion">La direccion digita no es valida, puede ser demasiado corta </string>
+    <string name="msg_error_cel">El numero de celular digitado no es valido</string>
+</resources>

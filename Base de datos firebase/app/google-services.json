@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "984878215793",
+    "firebase_url": "https://my-aplication-c7aa4.firebaseio.com",
+    "project_id": "my-aplication-c7aa4",
+    "storage_bucket": "my-aplication-c7aa4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984878215793:android:ce5bcdd54de9036cf0a1d0",
+        "android_client_info": {
+          "package_name": "com.example.basededatosfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984878215793-cgo1a8pl6ok7esrb96t1n68v8brgnj3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2XjWXBDbPv3cEA2hlV9-wfzHIF7LCks4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984878215793-cgo1a8pl6ok7esrb96t1n68v8brgnj3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

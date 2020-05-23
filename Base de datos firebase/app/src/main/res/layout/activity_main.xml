@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:onClick="registrar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/add"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/buttonConsult"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/campo_cel" />
+
+    <Button
+        android:id="@+id/buttonConsult"
+        android:onClick="consultar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/consult"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/buttonUpdate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonAdd" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:onClick="actualizar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/update"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/buttonDelete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonConsult" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:onClick="eliminar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/delete"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonUpdate" />
+
+    <EditText
+        android:id="@+id/campo_id"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ident" />
+
+    <EditText
+        android:id="@+id/campo_name"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/direccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+
+    <EditText
+        android:id="@+id/campo_direc"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/cel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/direccion" />
+
+    <EditText
+        android:id="@+id/campo_cel"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/buttonAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cel" />
+
+    <TextView
+        android:id="@+id/ident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/ident"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/campo_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/campo_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/campo_id" />
+
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calle"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/campo_direc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/campo_name" />
+
+    <TextView
+        android:id="@+id/cel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/phone"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/campo_cel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/campo_direc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
